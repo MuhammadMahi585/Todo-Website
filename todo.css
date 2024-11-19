@@ -1,0 +1,273 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    background-image: url("th.jpeg");
+    background-color: rgba(45, 107, 107,0.5);
+    width: 100vw;
+}
+h1{
+    display: flex;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(45, 107, 107);
+    color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+}
+h2{
+    font-size:2rem;
+}
+.task{
+    margin: 10px;
+    box-shadow: 10px 10px 10px black;
+}
+.title{
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+.description{
+    font-size: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+.btn{
+    background-color: rgba(45, 107, 107,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-size: contain;
+    background-position: center;
+
+    height: 100vh;
+    margin: 0px;
+    background-color: gainsboro;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    
+    background-color: gainsboro;
+}
+.task-list{
+    background-color: aliceblue;
+    margin: 0px;
+}
+#task-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    text-align: center;
+    background-color: rgb(45, 107, 107);
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    height: 12%;
+}
+.task-list-container li:nth-child(even){
+    list-style-type: none;
+    background-color: rgb(45, 107, 107);
+}
+.task-list-container li:nth-child(even)::before{
+   content: " 📌";
+}
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.task-title {
+    font-size: 18px;
+}
+
+.task-btn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.task-description {
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    body{
+        background-image: none;
+        background-color: rgba(45, 107, 107,0.5);
+    }
+   .container{
+    background-image: url("th.jpeg");
+    background-size: cover;
+    background-position: center;
+   }
+   h1{
+    font-size: 2rem;
+    height: 10vh;
+   }
+   h2{
+    font-size: 2rem;
+   }   
+   .task{
+        margin: 5px;
+        box-shadow: none;
+   }
+   .content{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   }
+   #task-head{
+    height: 36vh;
+    font-size: 1rem;
+   }
+   .task-list-container li:nth-child(even){
+        background-color: rgb(45, 107, 107);
+   }
+   .task-list-container li:nth-child(even)::before{
+       content: "📌";
+   }
+   .task-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .task-title {
+        font-size: 8px;
+    }
+    .task-btn {
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    .task-description {
+        font-size: 12px;
+    }
+    .task-list{
+        background-color: aliceblue;
+        margin: 0px;
+    }
+    #task-head{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        text-align: center;
+        background-color: rgb(45, 107, 107);
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 10px;
+        height: 10vh;
+    }
+    .task-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .title{
+        width: 80%;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+      #task-head:hover {
+        animation: fadeIn 1s;
+      }
+      @keyframes fadeOut {
+        from { opacity: 1; }
+        to   { opacity: 0; }
+      }
+      #task-head:hover {
+        animation: fadeOut 1s;
+      }
+      @media (max-width: 480px) {
+        body{
+            background-image: none;
+            background-color: rgba(45, 107, 107,0.5);
+            width: 100vw;
+        }
+       .container{
+        background-image: url("th.jpeg");
+        background-size: cover;
+        background-position: center;
+       }
+       h1{
+        font-size: 1.5rem;
+        height: 15vh;
+        width: 100vw;
+       }
+       h2{
+        font-size: 1rem;
+       }   
+       .task{
+            margin: 5px;
+            box-shadow: none;
+       }
+       .content{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+       }
+       #task-head{
+        height: 3vh;
+       }
+        .task-title {
+            font-size: 14px;
+        }
+        .task-btn {
+            background-color: transparent;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .task-description {
+            font-size: 10px;
+        }
+        .task-list{
+            background-color: aliceblue;
+            margin: 0px;
+        }
+        .description{
+            font-size: 10px;
+            width: 80%;
+        }
+        #task-head{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            text-align: center;
+            background-color: rgb(45, 107, 107);
+            color: rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+            height: 10vh;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+          }
+          #task-head:hover {
+            animation: fadeIn 1s;
+          }
+          @keyframes fadeOut {
+            from { opacity: 1; }
+            to   { opacity: 0; }
+          }
+          #task-head:hover {
+            animation: fadeOut 1s;
+          }
+      }
+}

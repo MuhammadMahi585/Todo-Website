@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>📝 To-Do List</h1>
+    <div class="content">
+    <div class="container">
+    <h2>🖋️ Add Task</h2>
+    <input type="text" placeholder="🏷️ Task title" class="task title">
+    <textarea placeholder="💬 Task description" class="task description"></textarea>
+    <button class="task btn">✔️ Add Task</button>
+    </div>
+    <div class="task-list">
+    <h2 id="task-head">🧾 Task List</h2>
+    <ul class="task-list-container">
+        <div class="task-header">
+        <li class="task-tittle">Task</li>
+        <button class="task-btn">🗑️</button>
+        </div>
+        <li class="task-description">Description</li>
+        
+    </ul>
+   </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
