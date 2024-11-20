@@ -229,9 +229,6 @@ h2{
        .content{
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
        }
-       #task-head{
-        height: 1.5vh;
-       }
         .task-title {
             font-size: 14px;
         }
@@ -269,14 +266,14 @@ h2{
             to   { opacity: 1; }
           }
           #task-head:hover {
-            animation: fadeIn 1s;
+            animation: fadeIn 2s;
           }
           @keyframes fadeOut {
             from { opacity: 1; }
             to   { opacity: 0; }
           }
           #task-head:hover {
-            animation: fadeOut 1s;
+            animation: fadeOut 2s;
           }
       }
 }
