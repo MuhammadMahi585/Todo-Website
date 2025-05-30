@@ -22,6 +22,9 @@ A simple and clean Todo web application that helps users manage their daily task
 
 ---
 
+## UI
+![web Preview Page](/Todo-Website/img.png)
+
 ## 🚀 Technologies Used
 
 - **HTML5** – Page structure
