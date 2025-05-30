@@ -23,7 +23,7 @@ A simple and clean Todo web application that helps users manage their daily task
 ---
 
 ## UI
-![web Preview Page](/Todo-Website/img.png)
+![web Preview Page](./img.png)
 
 ## 🚀 Technologies Used
 
